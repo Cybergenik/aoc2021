@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import argparse
 from io import BufferedWriter
 import os
@@ -43,7 +41,7 @@ def main() -> None:
     with dir_open(f'day{args.day}/input.txt') as f:
         f.write(s)
 
-    print("finished downloading :D...")
+    print("all done!")
 
 if __name__ == "__main__":
     raise SystemExit(main())

@@ -4,8 +4,8 @@ def main() -> int:
     with open("input.txt") as f:
         content = f.readlines()
 
-    c02 = copy.deepcopy(content)
-    oxygen = copy.deepcopy(content) 
+    c02 = copy.copy(content)
+    oxygen = copy.copy(content) 
 
     for inx in range(12):
         if len(oxygen) > 1:

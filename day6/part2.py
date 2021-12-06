@@ -2,9 +2,8 @@ from collections import Counter
 def main() -> int:
     with open("input.txt") as f:
         content = f.readlines()
-    initial_pop = [int(x) for x in content[0].split(",")]
 
-    nums = Counter(initial_pop)
+    nums = Counter([int(x) for x in content[0].split(",")])
     for _ in range(256):
         nums2 = Counter({8: nums[0], 6: nums[0]}) 
         for k, v in nums.items():

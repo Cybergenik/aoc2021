@@ -15,8 +15,6 @@ def get_input(year: int, day: int) -> str:
     return urllib.request.urlopen(req).read().decode()
 
 def dir_open(path) -> BufferedWriter:
-    ''' Open "path" for writing, creating any parent directories as needed.
-    '''
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return open(path, 'w')
 
